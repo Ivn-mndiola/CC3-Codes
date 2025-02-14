@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BankAccount {
+    class BankAccount {
     // Private attributes
     private String accountNumber;
     private double balance;
