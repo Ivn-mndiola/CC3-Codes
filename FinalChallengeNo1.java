@@ -1,3 +1,7 @@
+//cc3
+//mndiola
+
+
 //product class (parent class)
 class Product {
     protected String name;
@@ -32,7 +36,7 @@ class Electronics extends Product{
 
     @Override
     public void displayInfo(){
-        System.out.println("Electronics: " + name + "Price: $" + price + "Quantity: " + quantity + "Warranty months: " + warrantyMonths);
+        System.out.println("Electronics: " + name + " Price: $ " + price + " Quantity: " + quantity + " Warranty months: " + warrantyMonths);
     }
 
     public void extendWarranty(int extraMonths) {
@@ -72,26 +76,26 @@ class Book extends Product {
 
     @Override
     public void displayInfo() {
-        System.out.println("Book: " + name + ", Price: $" + price + ", Quantity: " + quantity +
+        System.out.println("Book: " + name + ", Price: $ " + price + ", Quantity: " + quantity +
                 ", Author: " + author);
     }
 
     public void readPreview() {
-        System.out.println("Reading a preview of \"" + name + "\" by " + author);
+        System.out.println("Reading a preview of " + name + " by " + author);
     }
 }
 
 
-public class EcommerceProductManagementSystem {
+public class FinalChallenge1 {
     public static void main(String[] args) {
 
         //instantation 
-        Electronics phone = new Electronics("Iphone ", 1200, 10, 24);
-        Clothing tshirt = new Clothing("T-Shirt", 25.00, 50, "L");
-        Book book = new Book("Don't Believe Anything You Think", 15.00, 100, "Joseph Nguyen");
+        Electronics Laptop = new Electronics("Laptop" , 1200, 10, 24);
+        Clothing tshirt = new Clothing("T-Shirt" , 25.00 , 50 , "L");
+        Book book = new Book("1984", 15.00, 100, "George Orwell");
 
                 //polymorphism
-                Product[] products = {phone, tshirt, book};
+                Product[] products = {Laptop, tshirt, book};
 
         System.out.println("E-COMMERCE SYSTEM\n");
 
